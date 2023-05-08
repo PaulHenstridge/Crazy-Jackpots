@@ -1,0 +1,58 @@
+.wheel-container {
+    display: flex;
+    padding: 2.5rem;
+    border: 1px solid black;
+    width: max-content;
+    height: max-content;
+    margin: 3rem;
+    overflow: hidden;
+}
+
+/* need to set container height to static value i think
+ so symbol (symbols?) can be taller...
+ or, symbols container is tall. lots of symbols inside, 
+ all animating down then up
+*/
+.symbol {
+    /* width: 100px; */
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    margin: 1.5rem;
+    font-size: 4rem;
+    overflow: hidden;
+}
+
+
+.spinning {
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(-200%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(200%);
+    }
+}
+
+/* maybe to different classes for speed of spin, else reserarch css variables */
+/*
+
+number div to [ overflow: hidden; wont go over edges ] go down, 
+disappear off bottom, then reappear at top.
+prob 2-3 divs at once?
+*/

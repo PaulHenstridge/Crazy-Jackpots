@@ -1,0 +1,10 @@
+.preview {
+    border: 1px solid green;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.preview:hover {
+    cursor: pointer;
+
+}

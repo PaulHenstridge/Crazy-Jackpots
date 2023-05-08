@@ -1,0 +1,14 @@
+.ShowBalance {
+    background-color: rgb(122, 187, 232);
+    border: 2px solid black;
+    font-size: 1rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ShowBalance>span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+}

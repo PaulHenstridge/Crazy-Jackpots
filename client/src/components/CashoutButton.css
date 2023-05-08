@@ -1,0 +1,5 @@
+.CashoutButton>button {
+    padding: 0.6rem 1.8rem;
+    border: 2px solid yellow;
+    margin-top: 1rem;
+}

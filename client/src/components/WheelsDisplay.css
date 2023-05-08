@@ -1,0 +1,9 @@
+.WheelsDisplay {
+    /* background-color: rgba(0, 255, 0, 0.5); */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 0;
+    background-color: rgb(2, 0, 15);
+    ;
+}

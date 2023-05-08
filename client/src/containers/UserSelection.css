@@ -1,0 +1,85 @@
+.UserSelection {
+    /* background-color: hsl(254, 50%, 50%); */
+    padding-bottom: 1rem;
+    border-radius: 50% 50% 0 0;
+    box-shadow: #e50b0b 0 -5px 23px 2px;
+}
+
+.neon {
+    font-family: 'freehand', cursive;
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 0.6rem;
+    /* text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa; */
+
+    animation: pulsate-flicker 5s infinite;
+}
+
+@keyframes pulsate-flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #e50b0b,
+            0 0 80px #e50b0b,
+            0 0 90px #e50b0b,
+            0 0 100px #e50b0b,
+            0 0 150px #e50b0b;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+.drop-out {
+    animation: drop 10s infinite;
+}
+
+@keyframes drop {
+
+    14.9%,
+    20.9%,
+    62.9%,
+    64.9%,
+    93.9% {
+        color: #fff;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #e50b0b,
+            0 0 82px #e50b0b,
+            0 0 92px #e50b0b,
+            0 0 102px #e50b0b,
+            0 0 151px #e50b0b;
+    }
+
+    15%,
+    21%,
+    63%,
+    65%,
+    81%,
+    94% {
+        color: transparent;
+        text-shadow: none;
+    }
+}

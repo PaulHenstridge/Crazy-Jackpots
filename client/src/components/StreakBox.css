@@ -1,0 +1,14 @@
+.StreakBox {
+    padding: 0.2rem 0.6rem;
+    border: 2px solid rgba(240, 248, 255, 0.836);
+    border-radius: 7%;
+    color: gold;
+}
+
+.s-win {
+    color: green;
+}
+
+.s-lose {
+    color: red;
+}

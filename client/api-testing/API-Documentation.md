@@ -1,0 +1,2 @@
+Card API:
+The count variable defines how many cards to draw from the deck. A new dekc can be generated and a deck deck_id will be returned. If not, just insert new and a valid deck will begenerated. deck_id is used as an identifier to know who is using with what deck. Decks expire after 2 weeks.
