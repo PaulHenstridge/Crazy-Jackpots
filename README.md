@@ -1,50 +1,32 @@
+# Crazy Jackpots - A Retro-Themed Browser Game App
 
-#  Slot Machine - A Browser Game App
-*A week-long group project as part of Codeclan E63*
+![Slot Machine](link-to-image.png) (Replace "link-to-image.png" with an attention-grabbing screenshot of the project.)
+
+*Experience the Nostalgia of the 1980s Slot Machine - A Week-Long Codeclan E63 Group Project*
 
 ## Project group members
-Jon Minton, Gregorio Fumagalli, Paul Henstridge, Andrew Dyson
+Paul Henstridge, Jon Minton, Gregorio Fumagalli, Andrew Dyson
 
 ## Introduction
-This is a brief for a browser game based on a slot machine game and broadly fitting the orginal codeclan project brief descirbed [here](https://github.com/codeclan/e63_classnotes/edit/main/week_09/day_4/JS%20Project%20briefs%2011.07.50%2011.08.59/browser_game.md).
+This fun browser game app is a modern twist on the classic 1980s slot machine (aka fruit machine). Embark on a thrilling journey filled with iconic symbols, spinning wheels, and the chance to hit the jackpot. This project was developed during our time at Codeclan E63.
 
-This brief provides further information on the MVP and extensions for this specific app, which are not covered in the original brief.
+## Project Highlights
+- Recreate the charm and excitement of a retro slot machine from the 1980s.
+- Engaging gameplay that allows users to add cash, spin the wheels, and aim for big wins!
+- User-friendly interface with options to pause wheels strategically for a better chance at success.
+- Personalize your experience with user registration and balance storage.
+- Cash out your winnings and see your wins and losses displayed in an eye-catching streak visual.
+- Admin controls for customizing play options, including cost per play and win values.
 
-## Project Aim
-Replicate some of the features and functionality of a 1980s fruit based slot machine.
-In such machines a user would add cash through a coin slot, press a button to cause three wheels to spin, have an option to pause any one or two of these wheels and recieve a cash payout if all three wheels showed the same fruit.  
+## Key Features
+- **User Registration:** Create your profile with your name and initial balance.
+- **Add/Remove Cash:** Insert funds or cash out wins
+- **Balance Display:** Keep track of your current balance.
+- **Spinning Wheels:**  Three wheels spin and fall on randomly selected symbols.
+- **Hold Feature:** Hold one or two wheels before spinning again.
+- **Admin Controls:** Admins can tweak play options, such as the cost per play and win values.
 
-## MVP
+## Tech Stack
+- **Front end:** React/Javascript, HTML, and CSS.
+- **Back End:** Express.js and MongoDb.
 
-- A feature for user to add cash
-- A feature for displaying user's current balance
-- A feature for displaying three wheels, selecting random symbols from an array
-    - including option to hold any of the wheels before next spin
-- Option to register and select different users
-    - registration option will include name and initial balance
-    - select option will resume stored balance of selected user
-- Option for user to cash out winnings
-- Images for icons will be drawn from an API
-- Visual display of win and loss streak
-
-## EXTENSIONS
-
-- Admin is allowed to adjust play options including
-    - Cost per play
-    - Value per win
-    - Elements in wheel
-- Display PNL for each user
-
-## Uses of APIs
-
-The app will make use of API calls in order to grab icons/gylphs for the elements in the wheel. 
-
-## Uses of databases
-
-The app will make use of databases in order to store user details and state.
-
-
-## Intended tech stack
-
-- **Front end**: React/Javascript, with HTML and CSS
-- **Back End**: Express.js, MongoDb
