@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import './AdminBox.css'
 
-const AdminBox = ({users, handleUserNameChange, handleBarUser, costPerGame, handleChangeCost}) => {
+const AdminBox = ({ users, handleUserNameChange, handleBarUser, costPerGame, handleChangeCost }) => {
 
     const [selectedUser, setSelectedUser] = useState('')
     const [selectedUserName, setSelectedUserName] = useState('')
 
     const [playCost, setPlayCost] = useState('')
 
-    useEffect( () => {
+    useEffect(() => {
         setPlayCost(-costPerGame)
-    }, [] )
+    }, [])
 
-
-    useEffect( () => {
-        if(selectedUser) {
-        setSelectedUserName(selectedUser.name)
+    useEffect(() => {
+        if (selectedUser) {
+            setSelectedUserName(selectedUser.name)
         }
     }, [selectedUser])
 
@@ -40,10 +39,10 @@ const AdminBox = ({users, handleUserNameChange, handleBarUser, costPerGame, hand
     }
 
     const handleNameOnChange = (e) => {
-        if(selectedUser) {
-        console.log(`value passed to handleNameOnChange is ${e.target.value}`)
-        const newSelectedUserName = e.target.value
-        setSelectedUserName(newSelectedUserName)
+        if (selectedUser) {
+            console.log(`value passed to handleNameOnChange is ${e.target.value}`)
+            const newSelectedUserName = e.target.value
+            setSelectedUserName(newSelectedUserName)
         }
     }
 
@@ -53,7 +52,7 @@ const AdminBox = ({users, handleUserNameChange, handleBarUser, costPerGame, hand
 
 
     const handleDeleteClick = () => {
-        if(selectedUser) {
+        if (selectedUser) {
             handleBarUser(selectedUser)
             setSelectedUserName('')
             setSelectedUser('')
@@ -63,11 +62,11 @@ const AdminBox = ({users, handleUserNameChange, handleBarUser, costPerGame, hand
 
     const changeForm = () => {
         return (
-        <form onSubmit = {handleSubmit}>
-            <input onChange={handleNameOnChange} type="text" value={selectedUserName}/>
-            <button onClick={handleDeleteClick}>Bar User</button>
-            <button>Submit changes</button>
-        </form>
+            <form onSubmit={handleSubmit}>
+                <input onChange={handleNameOnChange} type="text" value={selectedUserName} />
+                <button onClick={handleDeleteClick}>Bar User</button>
+                <button>Submit changes</button>
+            </form>
         )
     }
 
@@ -81,23 +80,23 @@ const AdminBox = ({users, handleUserNameChange, handleBarUser, costPerGame, hand
     }
 
     return (
-    <div className="AdminBox">
-        <h2>AdminBox</h2>
-        <select onChange = {handleOnChange}> 
-            <option value="">Select customer</option>
+        <div className="AdminBox">
+            <h2>AdminBox</h2>
+            <select onChange={handleOnChange}>
+                <option value="">Select customer</option>
                 {renderUserOptions}
-        </select>
-        {selectedUser && changeForm()}
-        <br/>
-        <h3>Change cost per play</h3>
-        <form onSubmit={handleSubmitChangeCost}>
-            <label htmlFor="changePlayCost">
-                <input id="changePlayCost" name="changePlayCost" type = "number" value = {playCost} onChange={handlePlayCostChange}/>
-            </label>
-            <button type = 'submit'> Confirm cost change</button>
-        </form>
-        
-    </div>  );
+            </select>
+            {selectedUser && changeForm()}
+            <br />
+            <h3>Change cost per play</h3>
+            <form onSubmit={handleSubmitChangeCost}>
+                <label htmlFor="changePlayCost">
+                    <input id="changePlayCost" name="changePlayCost" type="number" value={playCost} onChange={handlePlayCostChange} />
+                </label>
+                <button type='submit'> Confirm cost change</button>
+            </form>
+
+        </div>);
 }
- 
+
 export default AdminBox;

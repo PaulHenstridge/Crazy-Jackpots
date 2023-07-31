@@ -14,7 +14,6 @@ const UserExistingSelect = ({ users, handleUserSelect, activeUser, acceptNewUser
             acceptNewUser(true)
         }
         handleUserSelect(e.target.value)
-
     }
 
     return (

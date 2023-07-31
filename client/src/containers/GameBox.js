@@ -30,7 +30,6 @@ const GameBox = ({ balance, updateBalance, cards, clearBalance, costPerGame }) =
         })
     )
 
-
     const [gamePlayedCounter, setGamePlayedCounter] = useState(-2)
     const [loseStreakCounter, setLoseStreakCounter] = useState(0)
     const [winStreakCounter, setWinStreakCounter] = useState(0)

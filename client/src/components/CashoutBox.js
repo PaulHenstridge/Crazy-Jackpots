@@ -6,12 +6,12 @@ import CashoutDisplay from './CashoutDisplay';
 
 const CashoutBox = () => {
     return (
-        <div className ="CashoutBox">
+        <div className="CashoutBox">
             <h3>CashoutBox</h3>
-            <CashoutButton/>
-            <CashoutDisplay/>
+            <CashoutButton />
+            <CashoutDisplay />
         </div>
-      );
+    );
 }
- 
+
 export default CashoutBox;

@@ -7,7 +7,6 @@ const CashoutButton = ({ requestCashout }) => {
         console.log("Cashout button click detected")
         requestCashout()
     }
-
     return (
         <div className="CashoutButton">
             <button onClick={handleClick}>Cashout</button>

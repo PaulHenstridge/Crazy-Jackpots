@@ -6,8 +6,6 @@ import './UserSelection.css'
 import UserExistingSelect from '../components/UserExistingSelect';
 import UserNewForm from '../components/UserNewForm';
 
-
-
 const UserSelection = ({ users, handleActiveUserSelected, handleAddNewUser, activeUser }) => {
 
     const [newUser, setNewUser] = useState(false)
