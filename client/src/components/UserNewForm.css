@@ -7,6 +7,8 @@
     border-bottom: 1px solid aliceblue;
     margin-right: 0.6rem;
     padding: 0.4rem 1.2rem;
+    font-size: 1.2rem;
+
 }
 
 .UserNewForm input:hover {

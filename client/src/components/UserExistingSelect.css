@@ -1,5 +1,6 @@
 .UserExistingSelect {
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .UserExistingSelect>select {
@@ -7,6 +8,8 @@
     background-color: transparent;
     border: none;
     color: aliceblue;
+    font-size: 1.2rem;
+
 }
 
 .UserExistingSelect:hover {

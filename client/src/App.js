@@ -155,11 +155,26 @@ function App() {
 
     return (
         <div className="App">
+
+            {showAdmin &&
+                <AdminBox users={users}
+                    handleUserNameChange={handleUserNameChange}
+                    handleBarUser={handleBarUser}
+                    costPerGame={costPerGame}
+                    handleChangeCost={handleChangeCost} />}
+
             <button className="toggle-admin" onClick={(toggleAdmin)}>Admin</button>
-            <UserSelection users={users} handleActiveUserSelected={handleActiveUserSelected} handleAddNewUser={handleAddNewUser} activeUser={activeUser} />
-            {activeUser && <GameBox balance={activeUser.balance} updateBalance={updateBalance} cards={cards} clearBalance={clearBalance} costPerGame={costPerGame} />}
-            {activeUser && <RulesDisplay />}
-            {showAdmin && <AdminBox users={users} handleUserNameChange={handleUserNameChange} handleBarUser={handleBarUser} costPerGame={costPerGame} handleChangeCost={handleChangeCost} />}
+            <UserSelection users={users}
+                handleActiveUserSelected={handleActiveUserSelected}
+                handleAddNewUser={handleAddNewUser}
+                activeUser={activeUser} />
+
+            {activeUser &&
+                <GameBox balance={activeUser.balance}
+                    updateBalance={updateBalance}
+                    cards={cards}
+                    clearBalance={clearBalance}
+                    costPerGame={costPerGame} />}
 
         </div>
     );

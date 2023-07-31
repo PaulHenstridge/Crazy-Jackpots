@@ -6,6 +6,6 @@
     font-size: 1.8rem;
     font-weight: 800;
     text-align: center;
-    background: rgb(208, 222, 38);
-    background: linear-gradient(52deg, rgba(208, 222, 38, 1) 35%, rgba(48, 129, 25, 1) 96%);
+    background: gold;
+    background: linear-gradient(52deg, gold 35%, rgb(33, 83, 31) 96%);
 }

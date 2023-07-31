@@ -21,7 +21,7 @@ const Wheel = ({ symbols, symbol, wheelSetSchedules, spinningWheel, resetAnimati
     useEffect(() => {
         let chosen = wheelSetSchedules.find(image => image.code === symbol)
         setChosenURL(chosen.imageURL)
-    })
+    }, [symbol, wheelSetSchedules])
 
     const wheelSides = useRef([])
     // const overlay = useRef(null)

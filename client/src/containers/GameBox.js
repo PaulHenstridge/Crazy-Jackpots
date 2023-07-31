@@ -35,7 +35,7 @@ const GameBox = ({ balance, updateBalance, cards, clearBalance, costPerGame }) =
     const [loseStreakCounter, setLoseStreakCounter] = useState(0)
     const [winStreakCounter, setWinStreakCounter] = useState(0)
 
-    const [wheelSymbols, setWheelSymbols] = useState([wheelSet[0], wheelSet[0], wheelSet[0]])
+    const [wheelSymbols, setWheelSymbols] = useState([wheelSet[0], wheelSet[1], wheelSet[2]])
     const [holdStatuses, setHoldStatuses] = useState([false, false, false])
     const [preventHold, setPreventHold] = useState(false)
 
@@ -116,7 +116,7 @@ const GameBox = ({ balance, updateBalance, cards, clearBalance, costPerGame }) =
     }
 
     const sampleOne = (arr) => {
-        return arr[(Math.random() * arr.length) | 0]
+        return arr[Math.floor((Math.random() * arr.length))]
     }
 
     const handlePlayClicked = () => {

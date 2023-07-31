@@ -1,7 +1,7 @@
 import React from 'react';
 import './CashoutButton.css'
 
-const CashoutButton = ({requestCashout}) => {
+const CashoutButton = ({ requestCashout }) => {
 
     const handleClick = () => {
         console.log("Cashout button click detected")
@@ -10,7 +10,7 @@ const CashoutButton = ({requestCashout}) => {
 
     return (
         <div className="CashoutButton">
-            <button onClick={handleClick}>Cash Out</button>
+            <button onClick={handleClick}>Cashout</button>
         </div>
     );
 }

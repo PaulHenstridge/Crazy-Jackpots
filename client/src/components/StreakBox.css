@@ -1,8 +1,9 @@
 .StreakBox {
-    padding: 0.2rem 0.6rem;
+    padding: 0.4rem 1.2rem;
     border: 2px solid rgba(240, 248, 255, 0.836);
     border-radius: 7%;
     color: gold;
+    margin-bottom: 3rem;
 }
 
 .s-win {

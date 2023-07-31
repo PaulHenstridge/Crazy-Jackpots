@@ -46,7 +46,7 @@ const UserNewForm = ({ handleUserAdd, newUser, handleNewUser }) => {
                 />
                 <label class="hidden" htmlFor="newUserBalance">Initial Balance:</label>
                 <input
-                    placeholder='How much do you want to gamble?'
+                    placeholder='Initial Stake'
                     type="number"
                     step="0.01"
                     id="newUserBalance"
